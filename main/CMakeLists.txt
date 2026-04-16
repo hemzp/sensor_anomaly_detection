@@ -1,2 +1,5 @@
-idf_component_register(SRCS "main.c"
-                    INCLUDE_DIRS ".")
+idf_component_register(
+    SRCS
+    INCLUDE_DIRS "include"
+    REQUIRES driver esp_timer esp_common
+)
